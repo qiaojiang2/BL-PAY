@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	  http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!-- 开启注解扫描 ，采用注释的方式配置bean -->
+    <context:component-scan base-package="cn.jishuyuan.pay.dispathcer"/>
+    <!-- 环境属性配置文件 -->
+    <context:property-placeholder location="classpath*:properties/*.properties"/>
+
+    <!--    <context:component-scan base-package="com.coolqi.pay.base.model"/>
+        <context:component-scan base-package="com.coolqi.pay.base.mappers"/>-->
+
+    <!--<context:component-scan base-package="com.coolqi.ping"/>
+    <context:component-scan base-package="com.coolqi.sdk"/>
+    <context:component-scan base-package="com.coolqi.push.sdk"/>
+    <context:component-scan base-package="com.coolqi.riskmanagement.sdk"/>-->
+
+    <!--<context:property-placeholder ignore-unresolvable="true"
+                                  location="classpath:/webConfig.properties,classpath:/jdbc.properties"/>-->
+
+
+    <mvc:annotation-driven/>
+    <!-- 引入其他beans -->
+    <!--<import resource="spring-web-shiro.xml"></import>-->
+    <!--<import resource="spring-mvc.xml"></import>-->
+
+
+    <!-- 引入统一数据源配置文件 -->
+    <import resource="classpath*:spring/bl-pay-model.xml"/>
+    <!--SpringUtil工具类-->
+    <bean class="cn.jishuyuan.pay.base.common.utils.SpringContextUtil" id="springContextUtil" lazy-init="false"/>
+
+    <!--Redisson/Redis客户端访问集成-->
+    <bean id="redissonClient" class="cn.jishuyuan.pay.base.common.redisson.RedissonClientFactory">
+        <property name="redissonProperties">
+            <bean class="cn.jishuyuan.pay.base.common.redisson.RedissonProperties">
+                <!--<property name="mode" value="${mode}"/>
+                <property name="servers" value="${servers}"/>-->
+            </bean>
+        </property>
+    </bean>
+
+    <!--<bean id="curatorFramework" class="com.coolqi.common.spring.util.curator.CuratorFrameworkFactoryBean">-->
+    <!--<p  roperty name="curatorProperties">-->
+    <!--<bean class="com.coolqi.common.spring.util.curator.CuratorProperties">-->
+    <!--<property name="connectString" value="@curator.connectString@"/>-->
+    <!--</bean>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+</beans>

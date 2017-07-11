@@ -1,0 +1,43 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context-4.1.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--JSON支持配置-->
+    <mvc:annotation-driven
+            content-negotiation-manager="contentNegotiationManager"/>
+    <bean id="contentNegotiationManager"
+          class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+        <property name="favorPathExtension" value="false"/>
+        <property name="favorParameter" value="false"/>
+        <property name="ignoreAcceptHeader" value="false"/>
+        <property name="mediaTypes">
+            <map>
+                <entry key="json" value="application/json"/>
+            </map>
+        </property>
+    </bean>
+
+    <context:component-scan base-package="cn.jishuyuan.pay" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!-- 视图解析器，根据视图的名称new ModelAndView(name)，在配置文件查找对应的bean配置 -->
+    <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+        <property name="order" value="3"/>
+    </bean>
+
+    <!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/view/" p:suffix=".jsp"/>
+
+    <!-- json视图，XStreamMarshaller，可以转换任何形式的java对象 -->
+    <bean name="xStreamMappingJackson2JsonView"
+          class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+    </bean>
+
+</beans>
