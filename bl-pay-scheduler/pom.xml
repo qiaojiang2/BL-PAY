@@ -34,14 +34,27 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--Saturn框架任务开发依赖包-->
+        <dependency>
+            <groupId>com.vip.saturn</groupId>
+            <artifactId>saturn-job-api</artifactId>
+            <version>master-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <!--Saturn框架job任务开发打包专用插件-->
             <plugin>
+                <groupId>com.vip.saturn</groupId>
+                <artifactId>saturn-plugin</artifactId>
+                <version>master-SNAPSHOT</version>
+            </plugin>
+            <!--<plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
