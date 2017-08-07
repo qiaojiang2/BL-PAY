@@ -9,6 +9,7 @@
     <modules>
         <module>bl-pay-model</module>
         <module>bl-pay-common</module>
+        <module>bl-pay-example</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -9,7 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/bl-pay-channel/bl-pay-channel.iml" filepath="$PROJECT_DIR$/bl-pay-channel/bl-pay-channel.iml" />
       <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-common/bl-pay-common.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-common/bl-pay-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/bl-pay-dispathcer/bl-pay-dispathcer.iml" filepath="$PROJECT_DIR$/bl-pay-dispathcer/bl-pay-dispathcer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-example.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-example/bl-pay-example.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-example/bl-pay-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-example/bl-pay-example2.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-example/bl-pay-example2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-model/bl-pay-model.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-model/bl-pay-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/bl-pay-notify/bl-pay-notify.iml" filepath="$PROJECT_DIR$/bl-pay-notify/bl-pay-notify.iml" />
       <module fileurl="file://$PROJECT_DIR$/bl-pay-risk/bl-pay-risk.iml" filepath="$PROJECT_DIR$/bl-pay-risk/bl-pay-risk.iml" />

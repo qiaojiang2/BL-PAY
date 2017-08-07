@@ -12,6 +12,7 @@
         <module name="bl-pay-common" />
         <module name="bl-pay-dispathcer" />
         <module name="bl-pay-example" />
+        <module name="bl-pay-example2" />
         <module name="bl-pay-model" />
         <module name="bl-pay-notify" />
         <module name="bl-pay-risk" />
@@ -28,7 +29,8 @@
       <module name="bl-pay-channel" target="1.8" />
       <module name="bl-pay-common" target="1.8" />
       <module name="bl-pay-dispathcer" target="1.8" />
-      <module name="bl-pay-example" target="1.8" />
+      <module name="bl-pay-example" target="1.6" />
+      <module name="bl-pay-example2" target="1.8" />
       <module name="bl-pay-model" target="1.8" />
       <module name="bl-pay-notify" target="1.8" />
       <module name="bl-pay-risk" target="1.8" />
