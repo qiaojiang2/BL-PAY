@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bl-pay-account" />
+        <module name="bl-pay-admin" />
+        <module name="bl-pay-channel" />
+        <module name="bl-pay-common" />
+        <module name="bl-pay-dispathcer" />
+        <module name="bl-pay-example" />
+        <module name="bl-pay-model" />
+        <module name="bl-pay-notify" />
+        <module name="bl-pay-risk" />
+        <module name="bl-pay-route" />
+        <module name="bl-pay-scheduler" />
+        <module name="bl-pay-trade" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bl-pay" target="1.8" />
+      <module name="bl-pay-account" target="1.8" />
+      <module name="bl-pay-admin" target="1.8" />
+      <module name="bl-pay-base" target="1.8" />
+      <module name="bl-pay-channel" target="1.8" />
+      <module name="bl-pay-common" target="1.8" />
+      <module name="bl-pay-dispathcer" target="1.8" />
+      <module name="bl-pay-example" target="1.8" />
+      <module name="bl-pay-model" target="1.8" />
+      <module name="bl-pay-notify" target="1.8" />
+      <module name="bl-pay-risk" target="1.8" />
+      <module name="bl-pay-route" target="1.8" />
+      <module name="bl-pay-scheduler" target="1.8" />
+      <module name="bl-pay-trade" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

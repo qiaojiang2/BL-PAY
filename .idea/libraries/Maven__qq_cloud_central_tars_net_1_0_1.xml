@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: qq-cloud-central:tars-net:1.0.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/qq-cloud-central/tars-net/1.0.1/tars-net-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/qq-cloud-central/tars-net/1.0.1/tars-net-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/qq-cloud-central/tars-net/1.0.1/tars-net-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

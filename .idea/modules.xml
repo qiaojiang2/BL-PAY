@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bl-pay.iml" filepath="$PROJECT_DIR$/bl-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-account/bl-pay-account.iml" filepath="$PROJECT_DIR$/bl-pay-account/bl-pay-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-admin/bl-pay-admin.iml" filepath="$PROJECT_DIR$/bl-pay-admin/bl-pay-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-base.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-channel/bl-pay-channel.iml" filepath="$PROJECT_DIR$/bl-pay-channel/bl-pay-channel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-common/bl-pay-common.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-common/bl-pay-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-dispathcer/bl-pay-dispathcer.iml" filepath="$PROJECT_DIR$/bl-pay-dispathcer/bl-pay-dispathcer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-example.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-base/bl-pay-model/bl-pay-model.iml" filepath="$PROJECT_DIR$/bl-pay-base/bl-pay-model/bl-pay-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-notify/bl-pay-notify.iml" filepath="$PROJECT_DIR$/bl-pay-notify/bl-pay-notify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-risk/bl-pay-risk.iml" filepath="$PROJECT_DIR$/bl-pay-risk/bl-pay-risk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-route/bl-pay-route.iml" filepath="$PROJECT_DIR$/bl-pay-route/bl-pay-route.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-scheduler/bl-pay-scheduler.iml" filepath="$PROJECT_DIR$/bl-pay-scheduler/bl-pay-scheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bl-pay-trade/bl-pay-trade.iml" filepath="$PROJECT_DIR$/bl-pay-trade/bl-pay-trade.iml" />
+    </modules>
+  </component>
+</project>

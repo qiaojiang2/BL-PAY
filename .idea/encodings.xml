@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-account" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-base/bl-pay-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-base/bl-pay-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-channel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-dispathcer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-notify" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-risk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-route" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-scheduler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bl-pay-trade" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
