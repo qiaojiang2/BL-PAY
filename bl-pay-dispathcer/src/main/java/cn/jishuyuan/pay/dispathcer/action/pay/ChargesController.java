@@ -4,7 +4,6 @@ import cn.jishuyuan.pay.dispathcer.action.SuperHead;
 import cn.jishuyuan.pay.base.common.vo.BaseRequest;
 import cn.jishuyuan.pay.base.common.vo.BaseResponse;
 import cn.jishuyuan.pay.base.common.vo.req.ChargesReqVo;
-import cn.jishuyuan.pay.base.common.vo.req.IdVerifyReqVo;
 import cn.jishuyuan.pay.dispathcer.action.verify.RequestParmsVerify;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.DataBinder;
@@ -48,7 +47,7 @@ public class ChargesController extends SuperHead {
         if (result.hasErrors()) {
             ObjectError error = result.getAllErrors().get(0);
             System.out.print(error.getCode().toString() + "，" + error.getDefaultMessage());
-            return new BaseResponse.Builder(baseRequest).failedResponse(Integer.valueOf(error.getCode()), error.getDefaultMessage());
+            return BaseResponse.failedResponse(Integer.valueOf(error.getCode()), error.getDefaultMessage()).build(baseRequest);
         }
         return null;
     }

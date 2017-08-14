@@ -18,7 +18,7 @@ import java.util.LinkedList;
  * </pre>
  */
 public class RequestQueue {
-    private final LinkedList queue = new LinkedList<>();
+    private final LinkedList queue = new LinkedList<String>();
 
     public synchronized Request getRequest() {
         while (queue.size() <= 0) {

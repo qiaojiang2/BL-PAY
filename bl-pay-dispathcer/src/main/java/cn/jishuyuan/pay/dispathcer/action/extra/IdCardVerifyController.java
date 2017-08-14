@@ -53,12 +53,12 @@ public class IdCardVerifyController extends SuperHead {
         if (result.hasErrors()) {
             ObjectError error = result.getAllErrors().get(0);
             System.out.print(error.getCode().toString() + "，" + error.getDefaultMessage());
-            return new BaseResponse.Builder(baseRequest).failedResponse(Integer.valueOf(error.getCode()), error.getDefaultMessage());
+            return BaseResponse.failedResponse(Integer.valueOf(error.getCode()), error.getDefaultMessage()).build(baseRequest);
         }
         //todo 数据处理逻辑
         String hello = "hello";
         //baseRequest.getData();
         IdVerifyResVo vo = IdVerifyResVo.builder().biz_type("cycling").build();
-        return new BaseResponse.Builder(baseRequest).setObj(vo).successResponse("认证成功");
+        return BaseResponse.successResponse("认证成功").setObj(vo).build(baseRequest);
     }
 }

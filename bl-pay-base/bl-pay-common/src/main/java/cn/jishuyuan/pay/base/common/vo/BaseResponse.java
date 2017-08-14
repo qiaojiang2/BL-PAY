@@ -39,14 +39,31 @@ public class BaseResponse implements Serializable {
         this.sign_info = sign_info;
     }
 
+    //构建失败响应报文
+    public static BaseResponse.Builder failedResponse(int errorCode, String errorMsg) {
+        //todo-响应报文数字签名
+        return new BaseResponse.Builder(errorCode, errorMsg);
+    }
+
+    //构建成功响应报文
+    public static BaseResponse.Builder successResponse(String message) {
+        //todo-响应报文数字签名
+        return new BaseResponse.Builder(0, message);
+    }
+
     //响应参数构建内部类
     public static final class Builder {
         private static final Map<Object, Object> NULL_OBJ = new HashMap();//空对象
-        private static BaseRequest requestVo;//请求参数
+        private int code;//响应码
+        private String msg;//响应信息
+        private String app_id;//应用ID
+        private String version;//接口版本号
+        private String sign_info;//签名信息
         private Object result;//响应结果
 
-        public Builder(BaseRequest requestVo) {
-            this.requestVo = requestVo;
+        public Builder(int code, String msg) {
+            this.code = code;
+            this.msg = msg;
         }
 
         public BaseResponse.Builder setObj(Object result) {
@@ -54,16 +71,8 @@ public class BaseResponse implements Serializable {
             return this;
         }
 
-        //构建失败响应报文
-        public BaseResponse failedResponse(int errorCode, String errorMsg) {
-            //todo-响应报文数字签名
-            return new BaseResponse(errorCode, errorMsg, requestVo.getApp_id(), NULL_OBJ, requestVo.getVersion(), "");
-        }
-
-        //构建成功响应报文
-        public BaseResponse successResponse(String message) {
-            //todo-响应报文数字签名
-            return new BaseResponse(0, message, requestVo.getApp_id(), this.result == null ? NULL_OBJ : this.result, requestVo.getVersion(), "");
+        public BaseResponse build(BaseRequest requestVo) {
+            return new BaseResponse(code, msg, requestVo.getApp_id(), this.result == null ? NULL_OBJ : this.result, requestVo.getVersion(), "");
         }
     }
 }
