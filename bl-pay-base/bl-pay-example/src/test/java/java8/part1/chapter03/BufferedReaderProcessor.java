@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
- * @author qiao <jiangqiao, jiangqiao@mobike.com>
+ * @author qiao <jiangqiao, 1468325120@qq.com>
  * @version v1.0
  * @project bl-pay
  * @Description

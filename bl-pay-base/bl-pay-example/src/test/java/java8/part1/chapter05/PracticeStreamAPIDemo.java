@@ -7,7 +7,7 @@ import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
 
 /**
- * @author qiao <jiangqiao, jiangqiao@mobike.com>
+ * @author qiao <jiangqiao, 1468325120@qq.com>
  * @version v1.0
  * @project bl-pay
  * @Description

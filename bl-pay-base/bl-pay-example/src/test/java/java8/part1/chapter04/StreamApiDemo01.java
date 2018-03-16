@@ -6,7 +6,7 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toList;
 
 /**
- * @author qiao <jiangqiao, jiangqiao@mobike.com>
+ * @author qiao <jiangqiao, 1468325120@qq.com>
  * @version v1.0
  * @project bl-pay
  * @Description

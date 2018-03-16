@@ -7,7 +7,7 @@ import java.util.concurrent.RecursiveTask;
 import java.util.stream.LongStream;
 
 /**
- * @author qiao <jiangqiao, jiangqiao@mobike.com>
+ * @author qiao <jiangqiao, 1468325120@qq.com>
  * @version v1.0
  * @project bl-pay
  * @Description
